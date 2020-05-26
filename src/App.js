@@ -24,6 +24,8 @@ function App() {
     const respuesta = await fetch(url);
     const resultado = await respuesta.json();
 
+    //setpaginaactual(1);
+
     guardarImagenes(resultado.hits);
 
     // Calcular el total de paginas
